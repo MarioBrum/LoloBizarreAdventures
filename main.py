@@ -23,3 +23,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+
+playerImg = pygame.image.load('lolo.png') ##arrumar a imagem do lolo, dividir sprites
+def player(x,y):
+    screen.blit(player)
