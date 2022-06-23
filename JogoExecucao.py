@@ -8,5 +8,8 @@ from pygame import mixer
 
 class Execucao:
 
-    def __init__(self,player):
-        self.player = player
+    def __init__(self,listaElementos):
+        self.listaElementos = listaElementos
+
+    def executa(self):
+        None
