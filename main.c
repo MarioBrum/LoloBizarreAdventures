@@ -12,6 +12,7 @@ int main(void)
     const int screenHeight = 450;
 
     InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
+    Texture2D menu = LoadTexture("LoloMenu.png");
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
@@ -29,10 +30,15 @@ int main(void)
         BeginDrawing();
 
             ClearBackground(RAYWHITE);
+            //menu.show()
 
-            DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+            DrawText("o", 190, 200, 20, DARKBLUE);
+            //6ImageDraw(menu,menu,190,150,BLACK)
+            //ImageDrawRectangle(loadImage("LoloMenu.png"), 250, 200, 20, 20, DARKRED)
+
 
         EndDrawing();
+        printf("%d",GetKeyPressed());
         //----------------------------------------------------------------------------------
     }
 
